@@ -36,7 +36,7 @@ CPMAddPackage(
     GIT_REPOSITORY "https://git.eclipse.menu/EclipseMenu/rift.git"
     GIT_TAG "v2.0.2"
 )
-CPMAddPackage("gh:prevter/AdvancedLabel#17ed1c1")
+CPMAddPackage("gh:prevter/AdvancedLabel#e9e1649")
 CPMAddPackage("gh:prevter/sinaps#7d2f7b1")
 CPMAddPackage("gh:prevter/rock#6a2d29e")
 
