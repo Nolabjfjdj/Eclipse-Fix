@@ -28,7 +28,7 @@ if (NOT ANDROID AND NOT IOS)
     )
 endif()
 
-CPMAddPackage("gh:prevter/gd-imgui-cocos#e66d02b")
+CPMAddPackage("gh:prevter/gd-imgui-cocos#6383c75")
 CPMAddPackage("gh:prevter/msgpack-for-matjson#12edd5a")
 CPMAddPackage("gh:maxnut/GDR-converter#71104a9")
 CPMAddPackage(
