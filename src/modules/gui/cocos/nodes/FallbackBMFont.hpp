@@ -4,7 +4,7 @@
 namespace eclipse::gui::cocos {
 
     /// @brief Label node that supports translation.
-    class TranslatedLabel : public Label {
+    class TranslatedLabel : public ::Label {
     public:
         static TranslatedLabel* create(geode::ZStringView key) {
             auto ret = new TranslatedLabel();
@@ -56,7 +56,7 @@ namespace eclipse::gui::cocos {
         bool initWrappedRaw(geode::ZStringView text, float wrapWidth, float scale);
     };
 
-    class EmojiLabel : public Label {
+    class EmojiLabel : public ::Label {
     public:
         static EmojiLabel* create(geode::ZStringView text, std::string const& font) {
             auto ret = new EmojiLabel();
