@@ -66,7 +66,7 @@ jobs:
         id: build
 
       - name: Upload build artifacts
-        uses: https://code.forgejo.org/actions/upload-artifact@v7
+        uses: https://code.forgejo.org/forgejo/upload-artifact@v3
         with:
           name: Build Output
           path: ${{ steps.build.outputs.build-output }}
