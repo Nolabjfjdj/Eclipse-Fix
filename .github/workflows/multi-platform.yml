@@ -18,9 +18,11 @@ jobs:
         - name: Windows
           os: geode-windows
           build-type: RelWithDebInfo
+          target: Win64
 
         - name: macOS
           os: geode-macos
+          target: MacOS
 
         - name: Android32
           os: geode-android
