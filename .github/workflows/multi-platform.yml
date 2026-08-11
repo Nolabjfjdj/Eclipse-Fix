@@ -16,22 +16,22 @@ jobs:
       matrix:
         config:
         - name: Windows
-          os: windows-latest
+          os: geode-windows
           build-type: RelWithDebInfo
 
         - name: macOS
-          os: macos-latest
+          os: geode-macos
 
         - name: Android32
-          os: ubuntu-latest
+          os: geode-android
           target: Android32
 
         - name: Android64
-          os: ubuntu-latest
+          os: geode-android
           target: Android64
 
         - name: iOS
-          os: macos-latest
+          os: geode-ios
           target: iOS
 
     name: ${{ matrix.config.name }}
@@ -39,7 +39,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
@@ -55,7 +55,7 @@ jobs:
 
   package:
     name: Package builds
-    runs-on: ubuntu-latest
+    runs-on: geode-windows
     needs: ['build']
 
     steps:
