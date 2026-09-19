@@ -522,15 +522,14 @@ namespace eclipse::hacks::Bot {
             //     if(checkPlayer->m_touchedRings.size() > 0) return;
             // }
 
+            if (s_bot.getState() == bot::State::RECORD) {
+                s_bot.recordInput(
+                    m_gameState.m_currentProgress / 2,
+                    (PlayerButton) button, !player1, down
+                );
+            }
+
             GJBaseGameLayer::handleButton(down, button, player1);
-
-            if (s_bot.getState() != bot::State::RECORD)
-                return;
-
-            s_bot.recordInput(
-                m_gameState.m_currentProgress / 2,
-                (PlayerButton) button, !player1, down
-            );
         }
     };
 
